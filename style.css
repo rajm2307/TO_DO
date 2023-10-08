@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('font/raleway-light.TTF') format('truetype');
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: #687eab;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+
+main {
+	max-width: 400px;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+
+#new-text-input {
+	flex: 1;
+	padding: 10px;	
+	padding-right: 174px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	outline: none;
+	transition: border 0.3s;
+	margin: 0px 0px 15px;
+	font-weight: 700;
+}
+
+#new-text-input:hover {
+	box-shadow: 0.5px 4px 5px 4px #888888;	
+}
+
+
+#new-text-input::placeholder {
+	color: #ccc;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	outline: none;
+	transition: color 0.3s;
+}
+
+#addinput {
+	color: #000000;
+	margin-left: 105px;
+	margin-top: 25px;
+	padding: 8px 15px;
+	border-radius: 20px;
+	border: 0px black solid;
+
+}
+
+#addinput:hover {
+	color: white;
+	background-color: #ff5722;
+}
+
+
+#delall {
+	color: #000000;
+	padding: 8px 15px;
+	margin-top: 25px;
+	margin-right: 85px;
+	border-radius: 20px;
+	border: 0px black solid;
+}
+
+#delall:hover {
+	color: white;
+	background-color: #ff5722;
+}
+
+/* List Styles */
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li input.inputEL:hover{
+	cursor: pointer;
+}
+
+.list_container li.checked input{
+    text-decoration: line-through;
+	color: #888;
+}
+
+
+.list_container li.checked::before {
+    content: '\2713'; 	
+    color: #888; 
+}
+
+
+
+.list_container {
+	margin: 20px 0px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #f9f9f9;
+	display: flex;
+	justify-content: space-between;
+	transition: background-color 0.3s;
+}
+
+.list_container:hover {
+	background-color: #e9cccc;
+	box-shadow: 0.5px 4px 5px 4px #888888;	
+}
+
+.inputEL {
+	flex: 1;
+	border: none;
+	font-size: 16px;
+	background: transparent;
+	outline: none;
+}
+
+.edit_button,
+.delete_button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	transition: color 0.3s;
+}
+
+.edit_button {
+	color: #3498db;
+}
+
+.edit_button:hover {
+	color: #022537;
+}
+
+.delete_button {
+	color: #e74c3c;
+}
+
+.delete_button:hover {
+	color: #741004;
+}
